@@ -1,0 +1,113 @@
+.footer {
+    background-color: var(--primary-background-color);
+    color: var(--white-color);
+    padding: 60px 0;
+  }
+  
+  
+  .footer-logo-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .footer-container {
+      display: flex;
+      align-items: baseline;
+    }
+  
+    .footer-wrap {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+  
+    .footer-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-right: 93px;
+      width: 100%;
+    }
+  
+  .footer-text {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-style: normal;
+  }
+  
+    .footer-text {
+      margin-bottom: 9px;
+    }
+  
+  .footer-subscribe,
+  .footer-joined {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+  
+  .footer-logo {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: block;
+    color: var(--white-color);
+  }
+  
+  .footer-contact {
+    margin: 0 0 8px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-contact:hover,
+  .footer-contact:focus {
+    color: var(--color-accent);
+  }
+  
+    .footer-contact {
+      margin-bottom: 9px;
+    }
+  
+  .footer-social-icons {
+    display: flex;
+  }
+  
+  .footer-social-icons {
+    margin-right: 10px;
+  }
+  
+  .footer-social-icons:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-social-icon {
+    fill: rgba(175, 177, 184, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-joined {
+    margin-bottom: 20px;
+  }
+  
+  .footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    list-style: none;
+    fill: var(--secondary-text-color);
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-social-link:hover,
+  .footer-social-link:focus {
+    background-color: var(--color-accent);
+    fill: var(--white-color);
+  }
