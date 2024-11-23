@@ -1,0 +1,125 @@
+.footer {
+  background-color: $footerBackgroundColor;
+  color           : $primaryBackgroundColor;
+  padding         : 60px 0;
+}
+
+
+.footer-logo-info {
+  display       : flex;
+  flex-direction: column;
+}
+
+
+.footer-container {
+  display    : flex;
+  align-items: baseline;
+}
+
+.footer-wrap {
+  display        : flex;
+  justify-content: space-around;
+  align-items    : baseline;
+}
+
+.footer-wrap {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : baseline;
+  margin-right   : 93px;
+  width          : 100%;
+}
+
+.footer-text {
+  margin-top   : 0;
+  margin-bottom: 8px;
+  font-style   : normal;
+}
+
+.footer-text {
+  margin-bottom: 9px;
+}
+
+.footer-subscribe,
+.footer-joined {
+  color         : $primaryBackgroundColor;
+  font-size     : 14px;
+  font-weight   : 700;
+  line-height   : normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer-logo {
+  margin-top   : 0;
+  margin-bottom: 20px;
+  display      : block;
+  color        : $primaryBackgroundColor;
+}
+
+.footer-contact {
+  margin    : 0 0 8px;
+  color     : rgba(255, 255, 255, 0.6);
+  transition: color $transition;
+}
+
+.footer-contact:hover,
+.footer-contact:focus {
+  color: $accentColor;
+}
+
+.footer-contact {
+  margin-bottom: 9px;
+}
+
+.footer-social-icons {
+  display: flex;
+}
+
+.footer-social-icons {
+  margin-right: 10px;
+}
+
+.footer-social-icons:last-child {
+  margin-right: 0;
+}
+
+.footer-social-icon {
+  fill      : $primaryBackgroundColor;
+  transition: fill $transition;
+}
+
+.footer-joined {
+  margin-bottom: 20px;
+}
+
+.footer-social-link {
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  width           : 44px;
+  height          : 44px;
+  list-style      : none;
+  fill            : $primaryTextColor;
+  background-color: rgba(255, 255, 255, 0.10);
+  border-radius   : 50%;
+  transition      : background-color $transition;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: $accentColor;
+}
+
+.form-subscribe-input::placeholder {
+  color  : $primaryBackgroundColor;
+  opacity: 0.6;
+}
+
+.form-subscribe-button {
+  background-color: $accentColor;
+}
+
+.form-subscribe-icon {
+  fill: $primaryBackgroundColor;
+}
