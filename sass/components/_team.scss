@@ -61,11 +61,10 @@
   list-style     : none;
   border-radius  : 50%;
   fill           : $primaryTextColor;
-  transition     : fill, background-color $transition;
-}
+  transition     : fill $transition, background-color $transition;
 
-.social-icons-link:hover,
-.social-icons-link:focus {
-  fill            : $primaryBackgroundColor;
-  background-color: $accentColor;
+  &:hover, &:focus{
+    fill            : $primaryBackgroundColor;
+    background-color: $accentColor;
+  }
 }

@@ -35,24 +35,25 @@
   letter-spacing: 0.42px;
   line-height   : 1.2;
   transition    : color $transition;
+
+  &:hover,
+  &:focus,
+  &.curently {
+    color: $accentColor;
+  }
+
+  &.curently::after {
+    content         : "";
+    position        : absolute;
+    top             : 44px;
+    left            : 0;
+    height          : 4px;
+    width           : 100%;
+    background-color: $accentColor;
+    border-radius   : 2px;
+  }
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.nav-link.curently {
-  color: $accentColor;
-}
-
-.nav-link.curently::after {
-  content         : "";
-  position        : absolute;
-  top             : 44px;
-  left            : 0;
-  height          : 4px;
-  width           : 100%;
-  background-color: $accentColor;
-  border-radius   : 2px;
-}
 
 .header-contacts {
   display: flex;
@@ -72,13 +73,13 @@
   font-size     : 14px;
   letter-spacing: 0.42px;
   line-height   : 1.2;
-  transition    : color fill $transition;
-}
+  transition    : color $transition, fill $transition;
 
-.header-contacts-link:hover,
-.header-contacts-link:focus {
-  color: $accentColor;
-  fill : $accentColor;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    fill : $accentColor;
+  }
 }
 
 .contact-icon {

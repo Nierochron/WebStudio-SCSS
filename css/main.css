@@ -30,7 +30,6 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  /*overflow-x: hidden;*/
 }
 
 .container {
@@ -91,13 +90,9 @@ a {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav-link:hover,
-.nav-link:focus,
-.nav-link.curently {
+.nav-link:hover, .nav-link:focus, .nav-link.curently {
   color: #2196F3;
 }
-
 .nav-link.curently::after {
   content: "";
   position: absolute;
@@ -133,12 +128,10 @@ a {
   font-size: 14px;
   letter-spacing: 0.42px;
   line-height: 1.2;
-  -webkit-transition: color fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.header-contacts-link:hover,
-.header-contacts-link:focus {
+.header-contacts-link:hover, .header-contacts-link:focus {
   color: #2196F3;
   fill: #2196F3;
 }
@@ -190,9 +183,7 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero-button:hover,
-.hero-button:focus {
+.hero-button:hover, .hero-button:focus {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -242,40 +233,7 @@ a {
   margin-left: 0;
   margin-right: 12px;
 }
-
 .form-subscribe-input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.48px;
-  color: #FFFFFF;
-}
-
-.form-subscribe-input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.48px;
-  color: #FFFFFF;
-}
-
-.form-subscribe-input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.48px;
-  color: #FFFFFF;
-}
-
-.form-subscribe-input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.48px;
-  color: #FFFFFF;
-}
-
-.form-subscribe-input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -308,7 +266,6 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-subscribe-button:hover {
   -webkit-animation: scaleAndreturn 1s ease-in-out;
           animation: scaleAndreturn 1s ease-in-out;
@@ -415,9 +372,7 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: none;
 }
-
-.modal-button:hover .modal-img,
-.modal-button:focus .modal-img {
+.modal-button:hover, .modal-button:focus {
   fill: #2196F3;
 }
 
@@ -425,6 +380,9 @@ a {
   fill: #000008;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-img:hover, .modal-img:focus {
+  fill: #2196F3;
 }
 
 .modal-title {
@@ -493,29 +451,13 @@ a {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-input:hover,
-.modal-input:focus {
-  border: 1px solid #2196F3;
-}
-
-.modal-input:hover,
-.modal-input:active {
+.modal-input:active, .modal-input:focus {
   fill: #2196F3;
 }
 
 .modal-input:hover + .modal-icon,
-.modal-input:active + .modal-icon {
-  fill: #2196F3;
-}
-
-.modal-input:focus,
-.modal-input:active {
-  fill: #2196F3;
-}
-
-.modal-input:focus + .modal-icon,
-.modal-input:active + .modal-icon {
+.modal-input:active + .modal-icon,
+.modal-input:focus + .modal-icon {
   fill: #2196F3;
 }
 
@@ -538,56 +480,34 @@ a {
   font-size: 12px;
   line-height: 1.17;
 }
-
-.modal-field textarea:hover,
-.modal-field textarea:focus {
+.modal-field textarea:focus, .modal-field textarea:hover {
   border: 1px solid #2196F3;
   outline: none;
 }
-
-.modal-field textarea::-moz-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-field textarea::-webkit-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-field textarea:-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-field textarea::-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-field textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
 .modal-field textarea::-moz-placeholder {
   font-size: 12px;
   line-height: 1.17;
+  color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-field textarea::-webkit-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
+  color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-field textarea:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
+  color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-field textarea::-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.17;
+  color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-field textarea::placeholder {
   font-size: 12px;
   line-height: 1.17;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .policy {
@@ -609,11 +529,6 @@ a {
   -moz-appearance: none;
   appearance: none;
 }
-
-.policy-input:checked {
-  opacity: 1;
-}
-
 .policy-input:checked + .policy-icon {
   opacity: 1;
 }
@@ -691,11 +606,9 @@ a {
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-submit:hover,
-.button-submit:focus {
+.button-submit:hover, .button-submit:focus {
   background-color: #FFFFFF;
-  color: var(--primary-background-color);
+  color: #2F303A;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -795,9 +708,7 @@ a {
   -webkit-transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border: 1px solid #2196F3;
   fill: #2196F3;
 }
@@ -881,12 +792,10 @@ a {
   list-style: none;
   border-radius: 50%;
   fill: #757575;
-  -webkit-transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-icons-link:hover,
-.social-icons-link:focus {
+.social-icons-link:hover, .social-icons-link:focus {
   fill: #FFFFFF;
   background-color: #2196F3;
 }
@@ -1025,9 +934,7 @@ a {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-contact:hover,
-.footer-contact:focus {
+.footer-contact:focus, .footer-contact:hover {
   color: #2196F3;
 }
 
@@ -1044,7 +951,6 @@ a {
 .footer-social-icons {
   margin-right: 10px;
 }
-
 .footer-social-icons:last-child {
   margin-right: 0;
 }
@@ -1078,9 +984,7 @@ a {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-link:hover, .footer-social-link:focus {
   background-color: #2196F3;
 }
 
@@ -1145,10 +1049,15 @@ a {
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio-element:hover {
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.portfolio-element:hover .portfolio-overlay {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 0.9;
 }
 
 .portfolio-thumb {
@@ -1177,13 +1086,6 @@ a {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-element:hover .portfolio-overlay {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 0.9;
 }
 
 .portfolio-element-text {
@@ -1226,7 +1128,6 @@ a {
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .portfolio-button:hover {
   background-color: #2196F3;
   color: #FFFFFF;

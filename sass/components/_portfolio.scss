@@ -18,10 +18,15 @@
   flex-basis: calc((100% - 2*30px) / 3);
   max-width : 370px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio-element:hover {
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  &:hover {
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  &:hover .portfolio-overlay {
+    transform: translateY(0);
+    opacity  : 0.9;
+  }
 }
 
 .portfolio-thumb {
@@ -45,11 +50,6 @@
   color           : $primaryBackgroundColor;
   background-color: $accentColor;
   transition      : transform $transition;
-}
-
-.portfolio-element:hover .portfolio-overlay {
-  transform: translateY(0);
-  opacity  : 0.9;
 }
 
 .portfolio-element-text {
@@ -86,10 +86,10 @@
   line-height  : 1.6;
   padding      : 6px 24px;
   transition   : all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio-button:hover {
-  background-color: $accentColor;
-  color           : $primaryBackgroundColor;
-  box-shadow      : 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  &:hover {
+    background-color: $accentColor;
+    color           : $primaryBackgroundColor;
+    box-shadow      : 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  }
 }

@@ -35,22 +35,14 @@
   width       : 358px;
   margin-left : 0;
   margin-right: 12px;
-}
 
-.form-subscribe-input::-moz-placeholder {
-  font-weight   : 400;
-  font-size     : 16px;
-  line-height   : 1.25;
-  letter-spacing: 0.48px;
-  color         : $primaryBackgroundColor;
-}
-
-.form-subscribe-input::placeholder {
-  font-weight   : 400;
-  font-size     : 16px;
-  line-height   : 1.25;
-  letter-spacing: 0.48px;
-  color         : $primaryBackgroundColor;
+  &::-moz-placeholder {
+    font-weight   : 400;
+    font-size     : 16px;
+    line-height   : 1.25;
+    letter-spacing: 0.48px;
+    color         : $primaryBackgroundColor;
+  }
 }
 
 .form-subscribe-button {
@@ -67,10 +59,10 @@
   border-radius   : 4px;
   box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition      : transform $transition;
-}
 
-.form-subscribe-button:hover {
-  animation: scaleAndreturn 1s ease-in-out;
+  &:hover {
+    animation: scaleAndreturn 1s ease-in-out;
+  }
 }
 
 @keyframes scaleAndreturn {
@@ -144,16 +136,21 @@
   border-radius   : 50%;
   border          : 1px solid rgba(0, 0, 0, 0.1);
   outline         : none;
-}
 
-.modal-button:hover .modal-img,
-.modal-button:focus .modal-img {
-  fill: $accentColor;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
 }
 
 .modal-img {
   fill      : #000008;
   transition: fill $transition;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
 }
 
 .modal-title {
@@ -212,30 +209,16 @@
   font-size     : 12px;
   outline       : none;
   transition    : border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-input:hover,
-.modal-input:focus {
-  border: 1px solid $accentColor;
-}
-
-.modal-input:hover,
-.modal-input:active {
-  fill: $accentColor;
+  &:active,
+  &:focus {
+    fill: $accentColor;
+  }
 }
 
 .modal-input:hover+.modal-icon,
-.modal-input:active+.modal-icon {
-  fill: $accentColor;
-}
-
-.modal-input:focus,
-.modal-input:active {
-  fill: $accentColor;
-}
-
-.modal-input:focus+.modal-icon,
-.modal-input:active+.modal-icon {
+.modal-input:active+.modal-icon,
+.modal-input:focus+.modal-icon {
   fill: $accentColor;
 }
 
@@ -256,30 +239,24 @@
   width      : 448px;
   font-size  : 12px;
   line-height: 1.17;
-}
 
-.modal-field textarea:hover,
-.modal-field textarea:focus {
-  border : 1px solid $accentColor;
-  outline: none;
-}
+  &:focus,
+  &:hover {
+    border : 1px solid $accentColor;
+    outline: none;
+  }
 
-.modal-field textarea::-moz-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
+  &::-moz-placeholder {
+    font-size  : 12px;
+    line-height: 1.17;
+    color      : rgba(117, 117, 117, 0.5);
+  }
 
-.modal-field textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-field textarea::-moz-placeholder {
-  font-size  : 12px;
-  line-height: 1.17;
-}
-
-.modal-field textarea::placeholder {
-  font-size  : 12px;
-  line-height: 1.17;
+  &::placeholder {
+    font-size  : 12px;
+    line-height: 1.17;
+    color      : rgba(117, 117, 117, 0.5);
+  }
 }
 
 .policy {
@@ -294,14 +271,10 @@
   -webkit-appearance: none;
   -moz-appearance   : none;
   appearance        : none;
-}
 
-.policy-input:checked {
-  opacity: 1;
-}
-
-.policy-input:checked+.policy-icon {
-  opacity: 1;
+  &:checked+.policy-icon {
+    opacity: 1;
+  }
 }
 
 .policy-checkbox {
@@ -358,11 +331,11 @@
   background-color: $accentColor;
   color           : $primaryBackgroundColor;
   transition      : all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button-submit:hover,
-.button-submit:focus {
-  background-color: $primaryBackgroundColor;
-  color           : var(--primary-background-color);
-  box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background-color: $primaryBackgroundColor;
+    color           : $footerBackgroundColor;
+    box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
