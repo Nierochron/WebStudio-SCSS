@@ -77,3 +77,9 @@
         color: $accentColor
     }
 }
+@media screen and (min-width: 481px) {
+    .menu-container,
+    .menu-toggle{
+        display: none;
+    }
+}
