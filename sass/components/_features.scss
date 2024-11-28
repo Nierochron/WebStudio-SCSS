@@ -40,3 +40,24 @@
   font-size     : 14px;
   line-height   : 1.7;
 }
+@media screen and (max-width: $phone) {
+  .features{
+    width: 100%;
+    padding: 60px 0;
+  }
+  .features-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    flex-direction: column;
+  }
+  .features-subtitle{
+    text-align: center;
+  }
+  .features-icon-bg{
+    width: 450px;
+    height: 120px;
+  }
+}

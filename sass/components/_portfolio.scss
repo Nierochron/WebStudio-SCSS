@@ -93,3 +93,27 @@
     box-shadow      : 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
   }
 }
+
+@media screen and (max-width: $phone) {
+  .portfolio-button-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-right: 124px;
+  }
+  .portfolio-button {
+    padding       : 6px 22px;
+    font-size     : 16px;
+    font-weight   : 500;
+    line-height   : 1.6;
+    letter-spacing: 0.48px;
+  }
+  .portfolio-cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-element{
+    margin-bottom: 30px;
+    width: 450px;
+  }
+}

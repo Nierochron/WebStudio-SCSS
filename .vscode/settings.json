@@ -20,3 +20,9 @@
     ],
     "liveServer.settings.port": 5501
   }
+  {
+    "background.sidebar": {...},   // sidebar
+    "background.editor": {...},    // editor
+    "background.panel": {...},     // panel
+    "background.fullscreen": {...} // fullscreen
+  }

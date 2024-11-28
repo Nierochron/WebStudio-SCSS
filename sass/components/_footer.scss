@@ -123,3 +123,29 @@
 .form-subscribe-icon {
   fill: $primaryBackgroundColor;
 }
+@media screen and (max-width: $phone) {
+  .footer-wrap,
+  .form-subscribe-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: center;
+  }
+  .footer-section{
+    margin: 60px 0;
+  }
+  .form-subscribe-input{
+    width: 450px;
+    margin: 20px 0;
+  }
+  }

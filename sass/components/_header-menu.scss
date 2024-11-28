@@ -1,0 +1,79 @@
+@media screen and (max-width: $phone) {
+    .menu-toggle {
+        background-color: transparent;
+    }
+
+    .menu-container {
+        position        : fixed;
+        top             : 0;
+        left            : 0;
+        width           : 100%;
+        height          : 100%;
+        background-color: white;
+        padding         : 48px 40px;
+        z-index: 2;
+        transform       : translateX(100%);
+        transition: transform $transition;
+
+        &.is-open {
+            transform: translate(0);
+        }
+    }
+
+    .js-close-menu {
+        position: absolute;
+        top     : 25px;
+        right   : 5px;
+    }
+
+    .nav-menu {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : left;
+        gap            : 32px;
+    }
+
+    .nav-menu-link {
+        color         : $titleTextColor;
+        font-size     : 40px;
+        font-weight   : 500;
+        letter-spacing: 0.8px;
+
+
+        &:focus,
+        &.curently {
+            color: $accentColor;
+        }
+    }
+
+    .contacts-menu {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        margin-top: 302px;
+    }
+
+    .contacts-menu-link {
+        color         : $accentColor;
+        font-size     : 34px;
+        font-weight   : 500;
+        letter-spacing: 0.68px;
+        
+    }
+
+    .contacts-menu-link--mail {
+        color         : $primaryTextColor;
+        font-size     : 24px;
+        font-weight   : 500;
+        letter-spacing: 0.48px;
+    }
+    .social-network-menu{
+        display: flex;
+        gap: 20px;
+        margin-top: 64px;
+    }
+    .social-network-menu-link{
+        color: $accentColor
+    }
+}

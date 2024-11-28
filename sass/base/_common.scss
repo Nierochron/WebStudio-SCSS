@@ -7,6 +7,13 @@ body {
     padding: 0 15px;
     margin : 0 auto;
 }
+@media screen and (max-width: $phone) {
+    .container{
+    max-width: 480px;
+    overflow: hidden;
+    width: 100%;
+    }
+}
 
 a {
     transition: $transition;

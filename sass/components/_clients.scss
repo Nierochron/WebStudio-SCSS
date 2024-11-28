@@ -35,3 +35,14 @@
     fill  : $accentColor;
   }
 }
+@media screen and (max-width: $phone) {
+  .clients-logos-list{
+    display: flex;
+    flex-basis: calc((100% - 2*30px) / 2);
+    flex-wrap: wrap;
+  }
+  .clients-link{
+    width: 210px;
+    height: 92px;
+  }
+}

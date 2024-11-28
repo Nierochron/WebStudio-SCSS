@@ -339,3 +339,24 @@
     box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
+
+@media screen and (max-width: $phone) {
+  .modal{
+    width: 450px;
+    height: 609px;
+  }
+.modal-label{
+  width: 370px;
+  overflow: hidden;
+}
+  .modal-title{
+text-align: center;
+font-size: 20px;
+font-weight: 700;
+line-height: 1.5;
+letter-spacing: 0.6px;
+  }
+  .modal-field textarea{
+    width: 370px;
+  }
+}

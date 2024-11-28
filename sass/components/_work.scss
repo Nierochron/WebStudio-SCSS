@@ -38,3 +38,8 @@
 .work-item {
   position: relative;
 }
+@media screen and (max-width: $phone) {
+  .work{
+    display: none;
+  }
+  }

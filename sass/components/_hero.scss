@@ -31,7 +31,32 @@
   border-radius   : 4px;
   transition      : transform $transition;
 
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     transform: scale(1.1);
+  }
+}
+
+//phone
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 116px 0 128px;
+  }
+
+  .hero-title {
+    width: 360px;
+    text-align    : center;
+    font-size     : 26px;
+    font-weight   : 900;
+    line-height   : 1.6;
+    letter-spacing: 1.56px;
+  }
+
+  .hero-button {
+    padding       : 10px 24px;
+    font-size     : 16px;
+    font-weight   : 700;
+    line-height   : 1.9;
+    letter-spacing: 0.96px;
   }
 }

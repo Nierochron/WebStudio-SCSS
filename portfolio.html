@@ -21,22 +21,59 @@
     <header class="header">
         <!-- лого і навігація -->
         <div class="container header-container">
-            <a href="#" class="logo header-logo"><span class="blue">Web</span>Studio</a>
+            <a href="index.html" class="logo header-logo"><span class="blue">Web</span>Studio</a>
+                <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" js-open-menu style="width: 40px; height: 40px;">
+                    <svg class="header-svg-menu  js-open-menu" width="40" height="40">
+                        <use href="./pic/icons.svg#menu-open"></use>
+                    </svg>
+                </button>
             <nav class="header-nav">
                 <ul class="nav-list">
-                    <li class="nav-element"><a href="index.html" class="nav-link">Студія</a></li>
-                    <li class="nav-element"><a href="portfolio.html" class="nav-link curently">Портфоліо</a></li>
+                    <li class="nav-element"><a href="index.html" class="nav-link curently">Студія</a></li>
+                    <li class="nav-element"><a href="portfolio.html" class="nav-link">Портфоліо</a></li>
                     <li class="nav-element"><a href="#" class="nav-link">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="header-contacts">
                 <li class="contacts-element">
-                    <a href="mailto:info@devstudio.com" class="header-contacts-link">info@devstudio.com</a>
-                </li>
-                <li class="contacts-element"><a href="tel:+380961111111" class="header-contacts-link">+38 096 111 11
-                        11</a></li>
+                    <a href="mailto:info@devstudio.com" class="header-contacts-link">
+                    <svg class="header-svg-icons" width="16" height="12">
+                        <use href="./pic/icons.svg#envelope"></use>
+                    </svg> info@devstudio.com</a>  
+                    </li>
+                <li class="contacts-element">
+                        <a href="tel:+380961111111" class="header-contacts-link">
+                            <svg class="header-svg-icons" width="10" height="16">
+                                <use href="./pic/icons.svg#smartphone"></use>
+                            </svg> +38 096 111 1111</a>
             </ul>
         </div>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button type="button" 
+            class="menu-toggle js-close-menu">
+                <svg  width="40" height="40">
+                    <use class="icon-close" href="./pic/icons.svg#close-black"></use>
+                </svg>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-menu_item"><a href="./index.html" class="nav-menu-link">Студія</a></li>
+                <li class="nav-menu_item"><a href="./portfolio.html" class="nav-menu-link curently">Портфоліо</a></li>
+                <li class="nav-menu_item"><a href="" class="nav-menu-link">Контакти</a></li>
+            </ul>
+            <ul class="contacts-menu">
+                <li class="contacts-menu-item"><a class="contacts-menu-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="contacts-menu-item"><a class="contacts-menu-link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="social-network-menu">
+                <li class="social-network-menu-item"><a class="social-network-menu-link" href="#">Instagram</a></li>
+                <li class="social-network-menu-item"><a class="social-network-menu-link" href="#">Twitter</a></li>
+                <li class="social-network-menu-item"><a class="social-network-menu-link" href="#">Facebook</a></li>
+                <li class="social-network-menu-item"><a class="social-network-menu-link" href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+
+
     </header>
     <!--  main  -->
     <main>
@@ -61,6 +98,7 @@
                             </p>
                         </div>
                     </div>
+                    
                     <div class="portfolio-element-text">
                         <h3 class="portfolio-subtitle">Техноряк</h3>
                         <p class="portfolio-text">Веб-сайт</p>
@@ -248,6 +286,7 @@
             </form>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
