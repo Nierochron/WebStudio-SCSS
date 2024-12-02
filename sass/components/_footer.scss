@@ -123,7 +123,7 @@
 .form-subscribe-icon {
   fill: $primaryBackgroundColor;
 }
-@media screen and (max-width: $phone) {
+@media screen and (max-width:$phone) {
   .footer-wrap,
   .form-subscribe-field{
     display: flex;

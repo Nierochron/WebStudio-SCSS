@@ -1,17 +1,22 @@
 body {
-    font-family : "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .container {
-    width  : 1170px;
-    padding: 0 15px;
-    margin : 0 auto;
-}
-@media screen and (max-width: $phone) {
-    .container{
-    max-width: 480px;
+    margin  : 0 auto;
+    padding : 0 15px;
     overflow: hidden;
-    width: 100%;
+
+    @media screen and (min-width:$phone) {
+        width: 480px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        width: 768px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        width: 1200px;
     }
 }
 

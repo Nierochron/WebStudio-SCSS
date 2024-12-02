@@ -38,13 +38,12 @@
 }
 
 //phone
-@media screen and (max-width: 480px) {
+@media screen and (max-width:$phone) {
   .hero {
     padding: 116px 0 128px;
   }
 
   .hero-title {
-    width: 360px;
     text-align    : center;
     font-size     : 26px;
     font-weight   : 900;

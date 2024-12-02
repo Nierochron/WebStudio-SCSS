@@ -94,7 +94,7 @@
   }
 }
 
-@media screen and (max-width: $phone) {
+@media screen and (max-width:$phone) {
   .portfolio-button-list {
     display: flex;
     justify-content: flex-start;
