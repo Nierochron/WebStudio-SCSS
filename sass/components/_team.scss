@@ -69,17 +69,3 @@
     background-color: $accentColor;
   }
 }
-
-@media screen and (min-width:$phone) {
-  .team{
-    padding: 60px 15px;
-  }
-  .team-list{
-    flex-direction: column;
-  }
-  .team-title {
-    font-size     : 28px;
-    font-weight   : 700;
-    letter-spacing: 0.84px;
-  }
-}
