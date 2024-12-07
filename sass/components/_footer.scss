@@ -1,3 +1,37 @@
+@media screen and (min-width:$phone) {
+
+  .footer-wrap,
+  .form-subscribe-field {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    text-align     : center;
+    flex-direction : column;
+    margin         : 0 auto;
+  }
+
+  .footer-container {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    text-align     : center;
+    flex-wrap      : wrap;
+    flex-direction : center;
+  }
+
+  .footer-section {
+    margin: 60px 0;
+  }
+
+  .form-subscribe-input {
+    width : 450px;
+    margin: 20px 0;
+  }
+}
+
+
+@media screen and (min-width:$desktop) {}
+
 .footer {
   background-color: $footerBackgroundColor;
   color           : $primaryBackgroundColor;
@@ -111,9 +145,22 @@
   }
 }
 
-.form-subscribe-input::placeholder {
-  color  : $primaryBackgroundColor;
-  opacity: 0.6;
+.form-subscribe-input {
+  transition: border $transition, color $transition;
+
+  &::placeholder {
+    color  : $primaryBackgroundColor;
+    opacity: 0.6;
+  }
+
+  &:hover::placeholder {
+    color  : $primaryBackgroundColor;
+    opacity: 1;
+  }
+
+  &:hover {
+    border: 1px solid $primaryBackgroundColor;
+  }
 }
 
 .form-subscribe-button {
@@ -123,29 +170,3 @@
 .form-subscribe-icon {
   fill: $primaryBackgroundColor;
 }
-@media screen and (max-width:$phone) {
-  .footer-wrap,
-  .form-subscribe-field{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .footer-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    flex-direction: center;
-  }
-  .footer-section{
-    margin: 60px 0;
-  }
-  .form-subscribe-input{
-    width: 450px;
-    margin: 20px 0;
-  }
-  }

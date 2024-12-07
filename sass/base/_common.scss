@@ -3,8 +3,10 @@ body {
 }
 
 .container {
-    margin  : 0 auto;
-    padding : 0 15px;
+    min-width: 320px;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 
     @media screen and (min-width: $phone) {
         width: 480px;

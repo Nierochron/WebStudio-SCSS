@@ -1,102 +1,113 @@
-@media screen and (min-width: $desktop) {
-  .header {
-    padding      : 24px 0;
-    border-bottom: 1px solid $primaryTextColor;
-  }
+@media screen and (min-width: $phone) {
 
-  .header-container {
-    display        : flex;
-    justify-content: space-between;
-    align-items    : center;
+  .header-nav,
+  .header-contacts {
+    display: none;
   }
+}
+.header {
+  padding      : 24px 0;
+  border-bottom: 1px solid $primaryTextColor;
+}
 
-  .logo {
-    font-family   : "Raleway", sans-serif;
-    color         : $blackColor;
-    font-size     : 26px;
-    font-weight   : 700;
-    letter-spacing: 0.78px;
-    line-height   : 1.2;
-  }
+.header-container {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
 
-  .blue {
+.logo {
+  font-family   : "Raleway", sans-serif;
+  color         : $blackColor;
+  font-size     : 26px;
+  font-weight   : 700;
+  letter-spacing: 0.78px;
+  line-height   : 1.2;
+}
+
+.blue {
+  color: $accentColor;
+}
+
+.nav-list {
+  display: flex;
+  gap    : 50px;
+}
+
+.nav-link {
+  position      : relative;
+  color         : $primaryTextColor;
+  font-weight   : 500;
+  font-size     : 14px;
+  letter-spacing: 0.42px;
+  line-height   : 1.2;
+  transition    : color $transition;
+
+  &:hover,
+  &:focus,
+  &.curently {
     color: $accentColor;
   }
 
-  .nav-list {
-    display: flex;
-    gap    : 50px;
-
-    @media screen and (max-width: 480px) {
-      display: none;
-    }
+  &.curently::after {
+    content         : "";
+    position        : absolute;
+    top             : 44px;
+    left            : 0;
+    height          : 4px;
+    width           : 100%;
+    background-color: $accentColor;
+    border-radius   : 2px;
   }
+}
 
-  .nav-link {
-    position      : relative;
-    color         : $primaryTextColor;
-    font-weight   : 500;
-    font-size     : 14px;
-    letter-spacing: 0.42px;
-    line-height   : 1.2;
-    transition    : color $transition;
+.header-contacts {
+  display: flex;
+  gap    : 30px;
+}
 
-    &:hover,
-    &:focus,
-    &.curently {
-      color: $accentColor;
-    }
+.header-svg-icons {
+  margin-right: 10px;
+}
 
-    &.curently::after {
-      content         : "";
-      position        : absolute;
-      top             : 44px;
-      left            : 0;
-      height          : 4px;
-      width           : 100%;
-      background-color: $accentColor;
-      border-radius   : 2px;
-    }
+.header-contacts-link {
+  display       : flex;
+  align-items   : center;
+  color         : $primaryTextColor;
+  fill          : $primaryTextColor;
+  font-weight   : 500;
+  font-size     : 14px;
+  letter-spacing: 0.42px;
+  line-height   : 1.2;
+  transition    : color $transition, fill $transition;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    fill : $accentColor;
   }
+}
 
+.contact-icon {
+  fill        : currentColor;
+  margin-right: 8px;
+  align-items : center;
+  width       : 16px;
+  height      : 12px;
+}
 
-  .header-contacts {
-    display: flex;
-    gap    : 30px;
+.nav-list {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+  min-height     : 60px;
+}
 
-    @media screen and (max-width: 480px) {
-      display: none;
-    }
-
+@keyframes MoveBottom{
+  0%{
+    transform: translateY(100%);
   }
-
-  .header-svg-icons {
-    margin-right: 10px;
-  }
-
-  .header-contacts-link {
-    display       : flex;
-    align-items   : center;
-    color         : $primaryTextColor;
-    fill          : $primaryTextColor;
-    font-weight   : 500;
-    font-size     : 14px;
-    letter-spacing: 0.42px;
-    line-height   : 1.2;
-    transition    : color $transition, fill $transition;
-
-    &:hover,
-    &:focus {
-      color: $accentColor;
-      fill : $accentColor;
-    }
-  }
-
-  .contact-icon {
-    fill        : currentColor;
-    margin-right: 8px;
-    align-items : center;
-    width       : 16px;
-    height      : 12px;
+  100%{
+    transform: translateY(0);
   }
 }

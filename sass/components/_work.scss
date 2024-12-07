@@ -38,7 +38,7 @@
 .work-item {
   position: relative;
 }
-@media screen and (max-width:$phone) {
+@media screen and (min-width:$phone) {
   .work{
     display: none;
   }

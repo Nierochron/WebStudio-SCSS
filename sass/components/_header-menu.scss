@@ -1,8 +1,23 @@
-@media screen and (min-width:$phone) {
+@media screen and (max-width:$phone) {
     .menu-toggle {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        border: none;
         background-color: transparent;
-    }
-
+        cursor: pointer;
+        outline: none;
+      }
+      @media screen and (max-width: 767px) {
+        .menu-toggle {
+          display: block;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .menu-toggle {
+          display: none;
+        }
+      }
     .menu-container {
         position        : fixed;
         top             : 0;
@@ -77,5 +92,9 @@
 
     .social-network-menu-link {
         color: $accentColor
-    }
-}
+    }}
+    @media screen and (min-width: 768px) {
+        .menu-container,
+        .menu-toggle {
+          display: none;
+        }}
