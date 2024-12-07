@@ -1,0 +1,85 @@
+.team {
+  padding         : 94px 0;
+  background-color: $secondaryBackgroundColor;
+}
+
+.team-list {
+  display        : flex;
+  justify-content: center;
+  gap            : 30px;
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  background-color: $primaryBackgroundColor;
+}
+
+.team-title {
+  color        : $titleTextColor;
+  margin-bottom: 50px;
+  text-align   : center;
+  font-weight  : 700;
+  font-size    : 36px;
+  line-height  : 1.2;
+}
+
+.team-name {
+  text-align    : center;
+  color         : $titleTextColor;
+  font-weight   : 500;
+  margin        : 30px 0 10px;
+  font-size     : 16px;
+  letter-spacing: 0.48px;
+  line-height   : 1.2;
+}
+
+.team-description {
+  text-align    : center;
+  color         : $primaryTextColor;
+  font-weight   : 400;
+  font-size     : 16px;
+  letter-spacing: 0.48px;
+  line-height   : 1.2;
+}
+
+.social-icons {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  padding        : 16px 0 30px;
+  gap            : 10px;
+  padding        : 16px 0 30px;
+}
+
+.social-icons-link {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  width          : 44px;
+  height         : 44px;
+  list-style     : none;
+  border-radius  : 50%;
+  fill           : $primaryTextColor;
+  transition     : fill $transition, background-color $transition;
+
+  &:hover,
+  &:focus {
+    fill            : $primaryBackgroundColor;
+    background-color: $accentColor;
+  }
+}
+
+@media screen and (min-width:$phone) {
+  .team{
+    padding: 60px 15px;
+  }
+  .team-list{
+    flex-direction: column;
+  }
+  .team-title {
+    font-size     : 28px;
+    font-weight   : 700;
+    letter-spacing: 0.84px;
+  }
+}
