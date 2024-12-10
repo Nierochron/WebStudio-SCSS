@@ -27,7 +27,7 @@
   fill            : $primaryTextColor;
   border-radius   : 4px;
   background-color: $primaryBackgroundColor;
-  transition      : border, fill $transition;
+  transition      : border $transition, fill $transition;
 
   &:hover,
   &:focus {
