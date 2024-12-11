@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./dist/main.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/main.min.css">
+    <link>
 </head>
 
 <body>
-    <!--  заголовок  -->
     <header class="header">
-        <!-- лого і навігація -->
-        <div class="container header-container">
+        <div class="container header-container"  data-aos="fade-down">
             <a href="index.html" class="logo header-logo"><span class="blue">Web</span>Studio</a>
                 <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" js-open-menu style="width: 40px; height: 40px;">
                     <svg class="header-svg-menu  js-open-menu" width="40" height="40">
@@ -57,8 +57,8 @@
                 </svg>
             </button>
             <ul class="nav-menu">
-                <li class="nav-menu_item"><a href="./index.html" class="nav-menu-link">Студія</a></li>
-                <li class="nav-menu_item"><a href="./portfolio.html" class="nav-menu-link curently">Портфоліо</a></li>
+                <li class="nav-menu_item"><a href="./index.html" class="nav-menu-link curently">Студія</a></li>
+                <li class="nav-menu_item"><a href="./portfolio.html" class="nav-menu-link">Портфоліо</a></li>
                 <li class="nav-menu_item"><a href="" class="nav-menu-link">Контакти</a></li>
             </ul>
             <ul class="contacts-menu">
@@ -77,7 +77,7 @@
     </header>
     <!--  main  -->
     <main>
-        <section class="portfolio">
+        <section class="portfolio"  data-aos="fade-down">
             <div class="container portfolio-container">
             <h2 class="portfolio-title">Портфоліо</h2>
             <ul class="portfolio-button-list">
@@ -287,6 +287,10 @@
         </div>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
