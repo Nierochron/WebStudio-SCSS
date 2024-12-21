@@ -46,9 +46,7 @@
 }
 
 .form-subscribe-button {
-  display         : flex;
-  justify-content : center;
-  align-items     : center;
+  @extend %centered;
   padding         : 10px 28px;
   color           : $primaryBackgroundColor;
   background-color: $accentColor;
@@ -86,10 +84,7 @@
 
 .backdrop {
   position        : fixed;
-  top             : 0;
-  left            : 0;
-  width           : 100%;
-  height          : 100%;
+  @include fullSize;
   background-color: rgba(0, 0, 0, 0.2);
   opacity         : 1;
   transition      : opacity $transition;
@@ -129,9 +124,7 @@
   right           : 8px;
   width           : 30px;
   height          : 30px;
-  display         : flex;
-  align-items     : center;
-  justify-content : center;
+  @extend %centered;
   background-color: $primaryBackgroundColor;
   border-radius   : 50%;
   border          : 1px solid rgba(0, 0, 0, 0.1);
@@ -252,9 +245,7 @@
 }
 
 .policy {
-  display        : flex;
-  align-items    : center;
-  justify-content: center;
+  @extend %centered;
   margin-top     : 20px;
   margin-bottom  : 30px;
 }
@@ -270,9 +261,7 @@
 }
 
 .policy-checkbox {
-  display        : flex;
-  align-items    : center;
-  justify-content: center;
+  @extend %centered;
   position       : relative;
   flex-shrink    : 0;
   width          : 16px;

@@ -5,9 +5,7 @@
 .features-icon-bg {
   width           : 270px;
   height          : 120px;
-  display         : flex;
-  justify-content : center;
-  align-items     : center;
+  @extend %centered;
   border-radius   : 4px;
   background-color: $secondaryBackgroundColor;
 }

@@ -44,18 +44,14 @@
 }
 
 .social-icons {
-  display        : flex;
-  justify-content: center;
-  align-items    : center;
+  @extend %centered;
   padding        : 16px 0 30px;
   gap            : 10px;
   padding        : 16px 0 30px;
 }
 
 .social-icons-link {
-  display        : flex;
-  align-items    : center;
-  justify-content: center;
+  @extend %centered;
   width          : 44px;
   height         : 44px;
   list-style     : none;
