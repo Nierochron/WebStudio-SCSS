@@ -65,3 +65,14 @@
     background-color: $accentColor;
   }
 }
+@media screen and (min-width:$phone) and (max-width:$desktop){
+  .team-list{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width:$tablet) and (max-width:$desktop){
+  .team-item{
+    gap: 30px;
+    width: 354px;
+  }
+}

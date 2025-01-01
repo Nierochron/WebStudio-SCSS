@@ -5,6 +5,11 @@
   background-repeat  : no-repeat;
   background-position: center;
   padding            : 200px 0;
+
+  @media screen and (max-width:$desktop){
+    width: 100%;
+    padding: 116px 0 128px;
+  }
 }
 
 .hero-title {
@@ -16,6 +21,15 @@
   font-weight   : 900;
   font-size     : 44px;
   line-height   : 1.4;
+
+  @media screen and (max-width:$desktop){
+    text-align    : center;
+    font-size     : 26px;
+    font-weight   : 900;
+    line-height   : 1.6;
+    letter-spacing: 1.56px;
+    width: 360px;
+  }
 }
 
 .hero-button {
@@ -35,27 +49,14 @@
   &:focus {
     transform: scale(1.1);
   }
-}
 
-//phone
-@media screen and (max-width:$phone) {
-  .hero {
-    padding: 116px 0 128px;
-  }
-
-  .hero-title {
-    text-align    : center;
-    font-size     : 26px;
-    font-weight   : 900;
-    line-height   : 1.6;
-    letter-spacing: 1.56px;
-  }
-
-  .hero-button {
-    padding       : 10px 24px;
-    font-size     : 16px;
-    font-weight   : 700;
-    line-height   : 1.9;
-    letter-spacing: 0.96px;
+  @media screen and (max-width:$desktop){
+    .hero-button {
+      padding       : 10px 24px;
+      font-size     : 16px;
+      font-weight   : 700;
+      line-height   : 1.9;
+      letter-spacing: 0.96px;
+    }
   }
 }

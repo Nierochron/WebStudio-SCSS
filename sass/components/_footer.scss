@@ -75,7 +75,9 @@
   margin-bottom: 20px;
 }
 .footer-social-link {
-  @extend %centered;
+display: flex;
+justify-content: center;
+align-items: center;
   width           : 44px;
   height          : 44px;
   fill            : $primaryTextColor;
@@ -106,4 +108,39 @@
 }
 .form-subscribe-icon {
   fill: $primaryBackgroundColor;
+}
+
+
+@media screen and (min-width:$phone) and (max-width:$desktop){
+  .footer-container{
+    flex-wrap: wrap;
+  }
+  .form-subscribe-field{
+    flex-direction: column;
+  }
+  .footer-wrap{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .footer-section{
+    margin: 60px 0;
+  }
+  .footer-subscribe{
+    text-align: center;
+  }
+  .form-subscribe-button{
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width:$tablet) and (max-width:$desktop){
+  .footer-wrap{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .from-subscribe{
+    margin: 0 auto
+  }
 }

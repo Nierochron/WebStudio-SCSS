@@ -94,7 +94,7 @@
   }
 }
 
-@media screen and (max-width:$phone) {
+@media screen and (min-width:$phone) and (max-width:767px) {
   .portfolio-button-list {
     display: flex;
     justify-content: flex-start;
@@ -111,9 +111,18 @@
   .portfolio-cards{
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .portfolio-element{
     margin-bottom: 30px;
     width: 450px;
+  }
+}
+@media screen and (min-width:$tablet) and (max-width:1199px){
+  .portfolio-element{
+    flex-basis: calc((100% - 2*30px) / 2);
+  }
+  .portfolio-cards{
+    justify-content: start;
   }
 }

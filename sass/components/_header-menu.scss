@@ -1,12 +1,12 @@
-@media screen and (max-width:$phone) {
+@media screen and (min-width:$phone) {
     .menu-toggle {
         display: flex;
         margin: 0;
         padding: 0;
         border: none;
+        width: 40px;
+        height: 40px;
         background-color: transparent;
-        cursor: pointer;
-        outline: none;
       }
       @media screen and (max-width: 767px) {
         .menu-toggle {
@@ -34,8 +34,8 @@
 
     .js-close-menu {
         position: absolute;
-        top     : 25px;
-        right   : 5px;
+        top     : 10px;
+        right   : 15px;
     }
 
     .nav-menu {

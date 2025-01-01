@@ -38,3 +38,20 @@
   font-size     : 14px;
   line-height   : 1.7;
 }
+@media screen and (min-width:$phone) and (max-width:$desktop){
+  .features-list{
+    flex-wrap: wrap;
+  }
+  .features-subtitle{
+    text-align: center;
+  }
+  .features-icon-bg{
+    width: 100%;
+  }
+}
+@media screen and (min-width:$tablet) and (max-width:$desktop){
+  .features-item{
+    gap: 30px;
+    width: 354px;
+  }
+}

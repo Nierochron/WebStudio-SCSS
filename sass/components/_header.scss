@@ -1,9 +1,3 @@
-
-.header {
-  padding      : 9px 0;
-  border-bottom: 1px solid $primaryTextColor;
-}
-
 .header-container {
   display        : flex;
   justify-content: space-between;
@@ -58,6 +52,17 @@
 .header-contacts {
   display: flex;
   gap    : 30px;
+
+  @media screen and (max-width: $desktop){
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media screen and (max-width: 767px){
+    display: none;
+  }
 }
 
 .header-svg-icons {
@@ -95,4 +100,22 @@
   align-items    : center;
   justify-content: space-between;
   min-height     : 60px;
+
+  @media screen and (max-width: 767px){
+    display: none;
+  }
+}
+@media screen and (min-width: $phone) {
+  .header-mobile-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    margin: 16px 0;
+  }
+  .menu-toggle{
+  position: absolute;
+  right: 2%;
+  }
 }

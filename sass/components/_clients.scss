@@ -33,3 +33,20 @@
     fill  : $accentColor;
   }
 }
+@media screen and (min-width:$phone) and (max-width:$desktop){
+  .clients-title{
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+  .clients-logos-list{
+    flex-wrap: wrap;
+  }
+  .clients-link{
+    width: 210px;
+  }
+}
+@media screen and (min-width:$tablet) and (max-width:$desktop){
+  .clients-link{
+    width: 226px;
+  }
+}
