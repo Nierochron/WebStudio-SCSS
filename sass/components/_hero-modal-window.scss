@@ -321,7 +321,7 @@
   }
 }
 
-@media screen and (max-width: $phone) {
+@media screen and (min-width: $phone) {
   .modal{
     width: 450px;
     height: 609px;
